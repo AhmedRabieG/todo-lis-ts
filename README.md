@@ -7,5 +7,5 @@ disc
 todo list, drag and drop items, Typescript, Vuejs, pinia, scss
 
 to run the project 
-> npm instal 
+> npm instal,  
 > npm run dev 
