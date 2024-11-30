@@ -1,0 +1,188 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/////////////////////////////
+// => Global Fonts
+@font-face {
+  font-family: HindGuntur;
+  src: url(../fonts/HindGuntur-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: HindGuntur;
+  src: url(../fonts/HindGuntur-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Regular.ttf);
+    font-weight: 400;
+  }
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Bold.ttf);
+    font-weight: 700;
+}
+/////////////////////////////
+#aap {
+  height: 100vh;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: #2a2a2a;
+  // color: #2f855a;
+  background-color:rgba(255, 255, 255, 0.87);
+}
+a {
+  font-weight: 500;
+  color: #2f855a;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  &__primary {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 1.25rem;
+    gap: 0.625rem;
+    font-size: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c6f6d5;
+    color: #2f855a;
+    background-color: #38a169;
+  }
+  &:hover {
+    color: #185c3a;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  font-style: italic;
+}
+button {
+  display: inline-flex;
+  font-weight: 500;
+  color: #185838;
+  border: none;
+  padding: 0.25rem .75rem;
+  font-size: 15px;
+  border-radius: 4px;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+button:hover {
+  color: #083821;
+  font-weight: 600;
+}
+// => container and media query
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 430px) {
+  .container {
+    max-width: 390px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 565px) {
+  .container {
+    max-width: 540px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 920px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1490px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1805px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+/////////////
